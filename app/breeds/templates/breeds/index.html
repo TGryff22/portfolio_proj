@@ -1,0 +1,11 @@
+{% extends "breeds/base.html" %} {% load static %}{% block title %} Breeds
+{% endblock%} {% block content%}
+<div class="container">
+  <h1>Breeds</h1>
+  <ul>
+    {% for breed in breeds %}
+    <li>{{ breed.title }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}
